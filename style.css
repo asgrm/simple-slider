@@ -1,0 +1,149 @@
+.slider {
+  max-width: 500px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.25s;
+  transform: translateX(-200%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(50, 50, 50, 1);
+  font-weight: 800;
+}
+.controls button {
+  position: absolute;
+  height: 30px;
+  top: calc((300px - 30px) / 2);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  outline: none;
+  z-index: 5;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+}
+.prevBtn {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.nextBtn {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.controls button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.slide.current {
+  order: 1;
+  z-index: 3;
+  transform: translateX(0);
+}
+
+.slide.next {
+  z-index: 3;
+  transform: translateX(100%);
+}
+
+.slide.next + .slide {
+  transform: translateX(200%);
+}
+
+.slide.prev {
+  z-index: 3;
+  transform: translateX(-100%);
+}
+
+.slide1 {
+  background-image: url(./img/1.jpg);
+}
+
+.slide2 {
+  background-image: url(./img/2.jpg);
+}
+
+.slide3 {
+  background-image: url(./img/3.jpg);
+}
+
+.slide4 {
+  background-image: url(./img/4.jpg);
+}
+
+.slide5 {
+  background-image: url(./img/5.jpg);
+}
+
+.slide6 {
+  background-image: url(./img/6.jpg);
+}
+.slide7 {
+  background-image: url(./img/7.jpg);
+}
+
+.slide8 {
+  background-image: url(./img/8.jpg);
+}
+
+.slide9 {
+  background-image: url(./img/9.jpg);
+}
+
+.slide10 {
+  background-image: url(./img/10.jpg);
+}
+
+.slide11 {
+  background-image: url(./img/11.jpg);
+}
+
+.slide12 {
+  background-image: url(./img/12.jpg);
+}
+
+.slide13 {
+  background-image: url(./img/13.jpg);
+}
+
+.slide14 {
+  background-image: url(./img/14.jpg);
+}
+
+.slide15 {
+  background-image: url(./img/15.jpg);
+}
+
+.slide16 {
+  background-image: url(./img/16.jpg);
+}
+
+.slide17 {
+  background-image: url(./img/17.jpg);
+}
+
+.slide18 {
+  background-image: url(./img/18.jpg);
+}
+
+.slide19 {
+  background-image: url(./img/19.jpg);
+}
+
+.slide20 {
+  background-image: url(./img/20.jpg);
+}
